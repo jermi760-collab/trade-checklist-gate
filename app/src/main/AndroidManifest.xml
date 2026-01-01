@@ -5,7 +5,7 @@
         android:allowBackup="true"
         android:label="Trade Gatekeeper"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+        android:theme="@style/Theme.TradeGatekeeper">
 
         <activity
             android:name=".SettingsActivity"
@@ -23,4 +23,3 @@
     </application>
 
 </manifest>
-
