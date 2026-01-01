@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Trade Gatekeeper</string>
+    <string name="warning_text">Skipping rules = donating money to the market</string>
+    <string name="risk_label">Risk per trade (%)</string>
+    <string name="reason_label">Why is this trade valid?</string>
+    <string name="open_mt5">Open MT5</string>
+    <string name="settings">Settings</string>
+</resources>
