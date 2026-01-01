@@ -1,9 +1,9 @@
-@@ -0,0 +1,31 @@
 name: Build Android APK
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   build:
@@ -16,11 +16,11 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '17'
+          distribution: temurin
+          java-version: "17"
 
       - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
+        run: chmod +x TradeGatekeeper/gradlew
 
       - name: Build Debug APK
         working-directory: TradeGatekeeper
@@ -30,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: TradeGatekeeper/app/build/outputs/apk/debug/app-debug.apk
